@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cororo js</title>
+    <!-- <script src="./main.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        
+      }
+  
+    </style>
+
+  </head>
+<body>
+    <main></main>
+
+<style>
+    
+</style>
+    <script>
+//         function setup() {
+//   createCanvas(windowWidth, windowHeight);
+//   angleMode(DEGREES)
+//   rectMode(CENTER)
+// }
+
+// function draw() {
+//   background(20,20,30);
+//   translate(width/2,height/2)
+  
+//   noFill()
+//   stroke(255)
+  
+//   for(i=0; i<50; i++){
+//     push()
+//     //let r = map(i, 0, 20, 100, 1)
+//     var r = map(i, 0, 20, 100, 1)
+//     var g = map(sin(frameCount/2), -1)
+//     var b = 255;
+    
+//     stroke (r,g,b)
+//     rotate(sin(frameCount + i)*100)
+//     rect(sin(frameCount+i)*mouseX,cos(frameCount+i)*mouseY,600-i*2, 600-i*2,200+i);
+//     pop()
+//   }
+// }
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  angleMode(DEGREES)
+  rectMode(CENTER)
+}
+
+function draw() {
+  
+  background(20,20,30);
+  translate(width/2,height/2)
+  
+  noFill()
+  stroke(255)
+  
+  for(var i=0; i<200; i++){
+    push()
+    //let r = map(i, 0, 20, 100, 1)
+    var r = map(i, 0, 200, 100, 1)
+    var g = map(sin(frameCount/2), -1,1,100,200)
+    var b = map(cos(frameCount),-1,1,1,200);
+    
+    stroke (r,g,b)
+    rotate(tan(frameCount + i)*200)
+    rect(cos(frameCount+i)*mouseX,sin(frameCount+i)*mouseY,50-i*1, 200-i*2,100+i);
+    pop()
+  }
+}
+        // alert("hello,world");
+        // console.log(hello);
+        // let name = "지원"
+        // let age = 22;
+        // let bool = true;
+        // let hello = '안녕하세요, 지원입니다. ${age}살 입니다.'
+
+// let 계절 =["봄","여름","가을","겨울"]
+// console.log(계절);
+// for(i = 0; i < 계절.length; i++){
+//     console.log(계절[i]);
+// }
+// for(i = 1; i<= 10; i++){
+//     if(i%2)
+// }
+    </script>
+</body>
+</html>
